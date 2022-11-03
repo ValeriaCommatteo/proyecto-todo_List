@@ -1,0 +1,44 @@
+body{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(../assets/81130983-patrones-sin-fisuras-con-corazones-de-color-rosa-fondo-transparente-con-corazones-día-de-san-valentí.webp);
+}
+
+#boton {
+    border-style:solid;
+    border-color: rgb(20, 19, 20);
+    border-width: 3px;
+    font-family: 'Poor Story', cursive;
+    background-color: rgb(250, 156, 200);
+    align-items: center;
+    margin-left: 3%;
+    font-size: large;
+}
+
+/* Transicion de color*/ 
+#boton:hover {
+    box-shadow: inset 150px 0 0 0 rgb(248, 92, 152);
+}
+
+#nombre , #tarea, #titulo {
+    font-family: 'Poor Story', cursive;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#nombres , #tarea {
+    text-align: center;
+}
+
+#nombres {
+    margin-left: 1%;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+#tarea {
+    margin-left: 2%;
+    font-size: medium;
+}

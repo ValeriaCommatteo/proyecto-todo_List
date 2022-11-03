@@ -1,0 +1,12 @@
+ <body>
+ <h1 id="titulo">Lista de tareas del "Proyecto Integrador Final"</h1>
+  <label for="tarea" id="nombres">Nombre de la tarea:</label>
+  <input placeholder="Ingresa la tarea" type="text" id="tarea" [(ngModel)]="nombreTarea">
+  <button [disabled]="!nombreTarea" (click)="guardarTarea()" id="boton">CREAR TAREA</button>
+  <ul>
+    <li *ngFor="let tarea of tareas;let indice = index" [class.tachado] ="tarea.terminada">
+        <input [(ngModel)]="tarea.terminada" (change)="cambiarEstadoDeTarea()" type="checkbox"> {{tarea.nombre}}
+        <a  (click)="eliminarTarea(indice)" class="enlace-eliminar">&times;</a>
+    </li>
+  </ul>
+ </body>
